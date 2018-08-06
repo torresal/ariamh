@@ -444,7 +444,7 @@ def group_frames_by_track_date(frames):
         prod_url = fields['urls'][0]
         if len(fields['urls']) > 1:
             for u in fields['urls']:
-                if u.startswith('s3://'):
+                if u.startswith('gs://'):
                     prod_url = u
                     break
 
