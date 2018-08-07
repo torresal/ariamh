@@ -285,7 +285,7 @@ def main():
                 "stitch", "-b", "{} {} {} {}".format(dem_S, dem_N, dem_W, dem_E),
                 downsample_option, "-u", dem_user, "-p", dem_pass, dem_url
             ]
-	    logger.info("dem_cmd: {}".format(dem_cmd))	
+            logger.info("dem_cmd: {}".format(dem_cmd))	
             dem_cmd_line = " ".join(dem_cmd)
             logger.info("Calling ned_dem.py: {}".format(dem_cmd_line))
             check_call(dem_cmd_line, shell=True)
