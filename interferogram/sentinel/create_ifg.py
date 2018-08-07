@@ -264,6 +264,7 @@ def main():
                 "-r", "-s", "1", "-f", "-x", "-c", "-n", dem_user, "-w", dem_pass,
                 "-u", dem_url
             ]
+            logger.info("dem_cmd: {}".format(dem_cmd))
             dem_cmd_line = " ".join(dem_cmd)
             logger.info("Calling dem.py: {}".format(dem_cmd_line))
             check_call(dem_cmd_line, shell=True)
