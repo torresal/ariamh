@@ -304,7 +304,7 @@ def main():
     # download auciliary calibration files
     aux_cmd = [
         #"{}/fetchCal.py".format(BASE_PATH), "-o", "aux_cal"
-        "{}/fetchCalES.py".format(BASE_PATH), "-o", "aux_cal"
+        "{}/fetchCalES.py".format(BASE_PATH), "-o", "aux_cal_active"
     ]
     aux_cmd_line = " ".join(aux_cmd)
     #logger.info("Calling fetchCal.py: {}".format(aux_cmd_line))
