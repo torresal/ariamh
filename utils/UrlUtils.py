@@ -118,7 +118,7 @@ class UrlUtils(object):
         except:
             pass
         try:
-            self._dem_url = dc['ARIA_DEM_URL'].strip()
+            self._dem_url = dc['ARIA_SRTM1_DEM_URL'].strip()
         except:
             pass
         try:
