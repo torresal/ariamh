@@ -156,7 +156,7 @@ def fetch(starttime, endtime, mission='S1A', outdir='.', dry_run=False):
         for res in results:
             urls = res['fields']['urls']
             archive_fname = res['fields']['metadata.archive_filename'][0]
-            filtered = filter(lambda x: x.startswith('gs'), urls)
+            filtered = filter(lambda x: x.startswith('https'), urls)
             if isinstance(filtered, list): url = filtered[0]
             else: url = next(filtered)
             fields = archive_fname.split('_')
